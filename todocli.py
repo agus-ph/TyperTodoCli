@@ -42,12 +42,12 @@ def show():
 
     table = Table(show_header=True, header_style="bold blue")
     table.add_column("#", style="dim", width=6)
-    table.add_column("Todo", min_width=20)
-    table.add_column("Category", min_width=12, justify="right")
-    table.add_column("Done", min_width=12, justify="right")
+    table.add_column("Tareas", min_width=20)
+    table.add_column("Categoria", min_width=12, justify="right")
+    table.add_column("Hecho", min_width=6, justify="right")
 
     def get_category_color(category):
-        COLORS = {'Learn': 'cyan', 'YouTube': 'red', 'Sports': 'cyan', 'Study': 'green'}
+        COLORS = {'Casa': 'cyan', 'Trabajo': 'red', 'Programacion': 'cyan', 'Estudio': 'green'}
         if category in COLORS:
             return COLORS[category]
         return 'white'
